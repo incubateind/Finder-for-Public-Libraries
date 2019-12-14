@@ -65,6 +65,8 @@ display: block;
 	padding: 14px 40px;
 	border-radius: 8px;
 	margin-right: 5%;
+	color: black;
+cursor: pointer;
 }
 .btn_part2{
 	
@@ -80,5 +82,14 @@ display: block;
 	padding: 14px 40px;
 	border-radius: 8px;
 	margin-left: 5%;
+	color: black;
+cursor: pointer;
 }
-
+.btn_part1 .btn1:hover {
+  background-color: yellow;
+  color: black;
+}
+.btn_part2 .btn2:hover {
+  background-color: yellow;
+  color: black;
+}
