@@ -27,7 +27,7 @@ h1
 }
 .btn:hover{ background-color: #fff; color: #000;}
 .box input{ width: 100%; margin-bottom: 20px; }
-.box input[type="text"], input[type="password"]
+.box input[type="text"], input[type="password"], input[type="email"]
 {
   border: none;
   border-bottom: 1px solid #fff;
@@ -52,3 +52,5 @@ h1
 .box input[type="submit"]:hover{ cursor: pointer; background-color: #fff; color: #000;}
 .box a { text-decoration: none; font-size: 12px; line-height: 20px; color: darkgrey; transition: 0.4s ease; }
 .box a:hover{ color: #fff;}
+
+.home{position: absolute; bottom:5%; left: 80%; transform: translate(-50% -50%); }
