@@ -1,0 +1,55 @@
+<html>
+<head>
+   <title>Simple HERE Map</title>
+   <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+   <style>
+      html, body { border: 0; margin: 0; padding: 0; }
+      #map { height: 100vh; width: 100vw; }
+   </style>
+</head>
+<body>
+   <div id="map"></div>
+   <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+   <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+   <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+   <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
+   <script>
+      const platform = new H.service.Platform({ apikey: 'q8SRngcj0uIyPTA9lRriSOrDQ52lHrRSUM0GAucuIt8' });
+      const defaultLayers = platform.createDefaultLayers();
+      const map = new H.Map(document.getElementById('map'),
+         defaultLayers.vector.normal.map, {
+         center: { lat: 37.773972, lng: -122.431297 },
+         zoom: 13,
+         pixelRatio: window.devicePixelRatio || 1
+      });
+      window.addEventListener('resize', () => map.getViewPort().resize());
+      const behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+      const ui = H.ui.UI.createDefault(map, defaultLayers);
+
+      //Begin routing
+      //Configure transportation mode, start, end points
+      const request = {
+         mode: 'fastest;car',
+         waypoint0: 'geo!37.80221,-122.4191',
+         waypoint1: 'geo!37.76839,-122.51089',
+         representation: 'display'
+      };
+      //Initialize routing service
+      const router = platform.getRoutingService();
+      router.calculateRoute(request, response => {
+         //Parse the route's shape
+         const shape = response.response.route[0].shape.map(x => x.split(','));
+         const linestring = new H.geo.LineString();
+         shape.forEach(s => linestring.pushLatLngAlt(s[0], s[1]));
+         //Create a polyline with the shape
+         const routeLine = new H.map.Polyline(linestring, {
+            style: { strokeColor: 'blue', lineWidth: 3 }
+         });
+         //Add route to map
+         map.addObject(routeLine);
+         //Zoom to bounds of the route shape
+         map.getViewModel().setLookAtData({ bounds: routeLine.getBoundingBox() });
+      });
+   </script>
+</body>
+</html>
