@@ -1,0 +1,161 @@
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/KarshilSheth
+$ cd ..                                                                                                                                                               
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop
+$ git clone git@github.com:incubateindia/Finder-for-Public-Libraries.git
+Cloning into 'Finder-for-Public-Libraries'...
+Warning: Permanently added the RSA host key for IP address '13.234.210.38' to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop
+$ git clone https://github.com/incubateindia/Finder-for-Public-Libraries.git                                                                                          Cloning into 'Finder-for-Public-Libraries'...
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 195 (delta 2), reused 14 (delta 1), pack-reused 178
+Receiving objects: 100% (195/195), 1.51 MiB | 258.00 KiB/s, done.
+Resolving deltas: 100% (18/18), done.
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop
+$ git pull
+fatal: not a git repository (or any of the parent directories): .git
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop
+$ git pull Finder-for-Public-Libraries
+fatal: not a git repository (or any of the parent directories): .git
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop
+$ cd Finder-for-Public-Libraries
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/Finder-for-Public-Libraries (master)
+$ git pull master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/Finder-for-Public-Libraries (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        KarshilSheth/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/Finder-for-Public-Libraries (master)
+$ git add KarshilSheth/.                                                                                                                                              
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/Finder-for-Public-Libraries (master)
+$ git commit -u "The Project is in Process Karshil Sheth"
+error: pathspec 'The Project is in Process Karshil Sheth' did not match any file(s) known to git
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/Finder-for-Public-Libraries (master)
+$ git status                                                                                                                                                          On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   KarshilSheth/css/style.css
+        new file:   KarshilSheth/images/1.jpg
+        new file:   KarshilSheth/images/1.png
+        new file:   KarshilSheth/images/logo.jpg
+        new file:   KarshilSheth/index.html
+        new file:   KarshilSheth/login.html
+        new file:   KarshilSheth/map.html
+        new file:   KarshilSheth/screenshots/Screenshot (2).png
+        new file:   KarshilSheth/screenshots/Screenshot (3).png
+
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/Finder-for-Public-Libraries (master)
+$ cd KarshilSheth/
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/Finder-for-Public-Libraries/KarshilSheth (master)
+$ git commit -m "The Project is uploaded by karshil sheth and in under process"                                                                                       [master d61b68c] The Project is uploaded by karshil sheth and in under process
+ 9 files changed, 161 insertions(+)
+ create mode 100644 KarshilSheth/css/style.css
+ create mode 100644 KarshilSheth/images/1.jpg
+ create mode 100644 KarshilSheth/images/1.png
+ create mode 100644 KarshilSheth/images/logo.jpg
+ create mode 100644 KarshilSheth/index.html
+ create mode 100644 KarshilSheth/login.html
+ create mode 100644 KarshilSheth/map.html
+ create mode 100644 KarshilSheth/screenshots/Screenshot (2).png
+ create mode 100644 KarshilSheth/screenshots/Screenshot (3).png
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/Finder-for-Public-Libraries/KarshilSheth (master)
+$ git status                                                                                                                                                          On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/Finder-for-Public-Libraries/KarshilSheth (master)
+$ git push origin KarshilSheth                                                                                                                                        error: src refspec KarshilSheth does not match any.
+error: failed to push some refs to 'https://github.com/incubateindia/Finder-for-Public-Libraries.git'
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/Finder-for-Public-Libraries/KarshilSheth (master)
+$ git push origin master                                                                                                                                              Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (15/15), 1.77 MiB | 109.00 KiB/s, done.
+Total 15 (delta 0), reused 0 (delta 0)
+To https://github.com/incubateindia/Finder-for-Public-Libraries.git
+   5567c43..d61b68c  master -> master
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/Finder-for-Public-Libraries/KarshilSheth (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+KARSHIL@DESKTOP-1QBK1MH MINGW64 ~/Desktop/Finder-for-Public-Libraries/KarshilSheth (master)
+$ git log
+commit d61b68c917574ded0076aa14f63c13754b42208b (HEAD -> master, origin/master, origin/HEAD)
+Author: karshilsheth <karshilsheth@gmail.com>
+Date:   Sat Dec 14 22:08:28 2019 +0530
+
+    The Project is uploaded by karshil sheth and in under process
+
+commit 5567c43b8f9d8300904c9f994a24e94561784824
+Author: HeroicHitesh <hiteshkumar_1mv17cs042@sirmvit.edu>
+Date:   Sat Dec 14 20:55:30 2019 +0530
+
+    Create Student Folder
+
+commit bed2910c77f61d9884a1c1e269e31356e21183eb
+Author: GauravDarkslayer <www.gaurav10bhojwani@gmail.com>
+Date:   Sat Dec 14 19:00:48 2019 +0530
+
+    removed waste folder
+
+commit 2805d17bb907a0ca4f5cf67d6f07dfa45c9eab7f
+Author: Gaurav bhojwani <www.gaurav10bhojwani@gmail.com>
+Date:   Sat Dec 14 18:47:40 2019 +0530
+
+    added the driver file
+
+commit 07dd198695c85444ad8af7c22afeb587ce6aeb06
+Author: Gaurav bhojwani <www.gaurav10bhojwani@gmail.com>
+Date:   Sat Dec 14 18:46:28 2019 +0530
+
+    added static
+
+commit f3ab1f0cc3baa343a2c4e5fd0a73605b7dd04bdb
+Author: Gaurav bhojwani <www.gaurav10bhojwani@gmail.com>
+Date:   Sat Dec 14 18:43:05 2019 +0530
+
+    added templates
+
+commit d2b6a446934aba1b1a33b75256b401cd70e67fa9
+: 
