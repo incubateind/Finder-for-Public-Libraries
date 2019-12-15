@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+* For Fulscreen view of map
+*/
+#mapAligarh {
+  width: 100%;
+  height: 100vh;
+}
+
+/*
+* For Mobile Responsive Map
+*/
+@media screen and (max-width: auto) {
+  #mapAligarh {
+   width: 100%;
+   height: 100vh;
+  }
+}
