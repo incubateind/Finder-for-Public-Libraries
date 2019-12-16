@@ -1,0 +1,146 @@
+.container-page{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    height: 2875px;
+}
+.jumbo-bg{
+    background-image: url('../../../assets/images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heading-font{
+    font-family: "Merriweather";
+    font-weight: bolder;
+    color:  #3FEEE6;
+    text-align: center;
+}
+.font{
+    font-family: "Roboto";
+    font-weight: bolder;
+    font-size: 30px;
+    color:  #3FEEE6;
+}
+.jumbo-pos{
+    position: relative;
+    top: -32px;
+}
+.jumbo-about{
+    background-color: #7FAEF2;
+    position: relative;
+    top: -40px;
+}
+.title-font{
+    font-family: 'Merriweather';
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    color: #233253;
+}
+#map-img-size{
+    width: 1350px;
+    height: 700px;
+    position: relative;
+    top: -5px;
+    left: -50px;
+}
+#heading-map{
+    font-family: 'Merriweather';
+    font-size: 40px;
+    font-weight: bolder;
+    color: #233253;
+    position: relative;
+    top: -650px;
+    left: 400px; 
+}
+.container-connect{
+    height: 430px;
+    background-color: white;
+    position: relative;
+    top: -20px;
+}
+#heading-connect{
+    font-family: 'Merriweather';
+    font-size: 50px;
+    font-weight: bolder;
+    color: #233253;
+}
+.text-connect{
+    font-family: 'Merriweather';
+    font-size: 25px;
+    font-weight: bolder;
+    color: #233253;
+}
+#img-connect{
+    width: 70%;
+    height: 80%;
+    float: right;
+    position: relative;
+    left: 79%;
+    top: -382px;
+}
+.container-learn{
+    height: 445px;
+    position: relative;
+    top: -40px;
+    background-color: #AAD7FF;
+}
+#heading-learn{
+    font-family: 'Merriweather';
+    font-size: 50px;
+    font-weight: bolder;
+    color: #233253;
+    float: right;
+    position: relative;
+    left: 90%;
+    top: -800px;
+}
+.text-learn{
+    font-family: 'Merriweather';
+    font-size: 25px;
+    font-weight: bolder;
+    color: #233253;
+    float: right;
+    position: relative;
+    left: 100%;
+    top: -760px;
+}
+#img-learn{
+    width: 70%;
+    float: left;
+    position: relative;
+    left: -45px;
+    top: -415px;
+}
+.container-participate{
+    height: 430px;
+    background-color: #FFFFF7;
+    position: relative;
+    top: -40px;
+}
+#heading-participate{
+    font-family: 'Merriweather';
+    font-size: 50px;
+    font-weight: bolder;
+    color: #233253;
+    position: relative;
+    top: -530px;
+}
+.text-participate{
+    font-family: 'Merriweather';
+    font-size: 25px;
+    font-weight: bolder;
+    color: #233253;
+    position: relative;
+    top: -520px;
+}
+#img-participate{
+    float: right;
+    width: 70%;
+    height: 430px;
+    position: relative;
+    top: -900px;
+    left: 690px;
+}

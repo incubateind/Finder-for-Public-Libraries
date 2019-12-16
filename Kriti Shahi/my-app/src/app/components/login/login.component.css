@@ -1,0 +1,39 @@
+.container-color{
+    background-color: #003E54;
+    height: 625px;
+}
+.heading-font{
+    font-family: "Roboto";
+    font-weight: bolder;
+    font-size: 50px;
+    color:  #3FEEE6;
+}
+.heading-pos{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+.text-font{
+    font-family: "Roboto";
+    font-weight: bolder;
+    font-size: 30px;
+    color:  #3FEEE6;
+}
+.text-pos{
+    position: relative;
+    top: 150px;
+    left: 34%;
+}
+.button-pos{
+    position: relative;
+    top: 150px;
+    left: 38%;
+}
+.text-signup{
+    font-family: "Roboto";
+    font-size: 20px;
+    position: relative;
+    top: 230px;
+    left: 43%;
+    
+}

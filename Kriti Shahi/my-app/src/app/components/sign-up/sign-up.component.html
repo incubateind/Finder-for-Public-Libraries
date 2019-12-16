@@ -1,0 +1,26 @@
+<div class="container-fluid container-color">
+  <h2 class="heading-font heading-pos">Sign Up to DevHack</h2>
+  <form>
+    <div class="form-group col-md-4 text-font text-pos">
+      <label>Name</label>
+      <input type="text" [(ngModel)] ="signupUserData.devname" name="devname" class="form-control">
+    </div>
+    <div class="form-group col-md-4 text-font text-pos">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" [(ngModel)] ="signupUserData.email" name="email" class="form-control" id="exampleInputEmail1">
+    </div>
+    <div class="form-group col-md-4 text-font text-pos">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" [(ngModel)] ="signupUserData.password" name="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group col-md-4 text-font text-pos">
+      <label>Skills</label>
+      <input type="text" [(ngModel)] ="signupUserData.skills" name="skills" class="form-control">
+    </div>
+    <div class="form-group col-md-4 text-font text-pos">
+      <label for="exampleFormControlTextarea1">About Yourself</label>
+      <textarea [(ngModel)] ="signupUserData.about-yourself" name="about-yourself" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="2-3"></textarea>
+    </div>
+    <button (click)="signupUser()" type="submit" class="btn btn-primary col-md-3 button-pos" routerLink="/login">Signup</button>
+  </form>
+</div>
