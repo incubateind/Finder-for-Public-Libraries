@@ -1,0 +1,24 @@
+.nav-color{
+    background-color: #233253; 
+}
+.font{
+    font-family: "PT Serif";
+    font-weight: 900;
+    font-style: italic;
+    font-size: 25px;
+    margin-right: 545px;
+    color: #3FEEE6;
+}
+.font-link{
+    font-family: "PT Serif";
+    font-weight: 500;
+    font-style: italic;
+    font-size: 25px;
+    color: #3FEEE6;
+}
+.pos-link{
+    position: relative;
+    left: 250px;
+    margin-left: 20px; 
+}
+
